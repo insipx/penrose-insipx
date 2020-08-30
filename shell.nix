@@ -15,16 +15,13 @@ pkgs.mkShell {
         pkgs.st
         pkgs.dmenu
         unstable.nnn
-
-        pkgs.which
-        pkgs.zlib
-        pkgs.gcc
-        pkgs.pkg-config
+        
         pkgs.glib
+        pkgs.gcc
+        pkgs.pkgconfig
         pkgs.cairo
         pkgs.pango
         pkgs.python3
-        pkgs.gstreamer
         pkgs.xorg.libX11
         pkgs.xorg.libxcb
         pkgs.xorg.xcbutilkeysyms
@@ -33,6 +30,5 @@ pkgs.mkShell {
         pkgs.xcb-util-cursor
         pkgs.libxkbcommon
         pkgs.xorg.xorgserver
-        pkgs.xorg.libXinerama
     ];
 }
