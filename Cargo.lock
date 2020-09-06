@@ -323,9 +323,9 @@ dependencies = [
 
 [[package]]
 name = "penrose"
-version = "0.1.9"
+version = "0.1.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f94bc238f768eaeea2137be9b7b4c8b8c49d93af899c2f2456369b3a3aa0e157"
+checksum = "03d9b2b639932f7f671ab18ab14204a4bf1f8c31292ccbb2024189726e8321b9"
 dependencies = [
  "anyhow",
  "cairo-rs",

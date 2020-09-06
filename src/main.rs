@@ -55,6 +55,7 @@ fn main() {
         floating: false,
         gapless: true,
         follow_focus: true,
+        allow_wrapping: true,
     };
 
     // Defauly number of clients in the main layout area
@@ -81,7 +82,7 @@ fn main() {
     // NOTE: change these to programs that you have installed!
     let my_program_launcher = "dmenu_run";
     let my_file_manager = "nnn";
-    let my_terminal = "st";
+    let my_terminal = "kitty";
 
     /* hooks
      *
@@ -133,6 +134,8 @@ fn main() {
         // client management
         "M-j" => run_internal!(cycle_client, Forward),
         "M-k" => run_internal!(cycle_client, Backward),
+        "M-l" => run_internal!(cycle_workspace, Forward),
+        "M-h" => run_internal!(cycle_workspace, Backward),
         "M-S-j" => run_internal!(drag_client, Forward),
         "M-S-k" => run_internal!(drag_client, Backward),
         "M-S-q" => run_internal!(kill_client),
